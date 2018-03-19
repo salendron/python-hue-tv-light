@@ -16,11 +16,8 @@ def main():
     
     while True:
         frame = cam.get_frame()
-        if  frame != None:
-            #cv2.imshow('my webcam', frame)
-            
+        if  frame != None:            
             colorMapImage = frameToColorMapImage(frame)
-            #colorMapImage.save("/home/bruno/color.jpg")
             
             light_idx = 0
             
